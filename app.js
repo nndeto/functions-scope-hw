@@ -22,9 +22,27 @@
 //     return commonString === returnString;  
 // }
 // const wordIsPalindrome = checkPalindrome("level");
-// console.log(wordIsPalindrome)
+// console.log(wordIsPalindrome);
 
 ////Check a List
+//for loop to iterate through the array
+//if/else statements to check for student and log messages
+//outside block scopoe final return if all the loops fail to find student
+function checkForStudent(studentName, arrayOfStudents) {
+    for ( let i = 0; i < arrayOfStudents.length; i++)
+        if (arrayOfStudents[i] === studentName) {
+            return true;
+        } 
+    console.log(`${studentName}, was not one of the listed students.`);    
+    return false;
+}
+const studentIncluded =  checkForStudent('Sally', ['Kyle', 'Ruby']);
+console.log(studentIncluded);
+
+
+
+
+
 
 ////Sum Array
 //declare a total as 0 so it can change
