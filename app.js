@@ -6,7 +6,7 @@
 //upon the variable.
 //Q3 Being able to return a value makes a function more versatile in its uses.
 
-//Palindrome
+/////Palindrome
 //lowercase my string - for case sensitivity
 //turn it into an array
 //reverse it
@@ -14,12 +14,29 @@
 //check if new string matches original
 ///////using equality here will give true or false
 
-function checkPalindrome(str) {
-    let commonString = str.toLowerCase();
-    let arrayString = commonString.split("");
-    let reverseString = arrayString.reverse();
-    let returnString = reverseString.join("");
-    return commonString === returnString;  
-}
-const wordIsPalindrome = checkPalindrome("level");
-console.log(wordIsPalindrome)
+// function checkPalindrome(str) {
+//     let commonString = str.toLowerCase();
+//     let arrayString = commonString.split("");
+//     let reverseString = arrayString.reverse();
+//     let returnString = reverseString.join("");
+//     return commonString === returnString;  
+// }
+// const wordIsPalindrome = checkPalindrome("level");
+// console.log(wordIsPalindrome)
+
+////Check a List
+
+////Sum Array
+//declare a total as 0 so it can change
+//write a for loop
+//add i to total for each iteration
+//return total
+// function sumArray(anArray) {
+//     let total = 0;
+//     for (let i = 0; i < anArray.length; i++) {
+//             total+=anArray[i];
+//     }
+//     return total;
+// }
+// const sum = sumArray([1, 2, 3, 4, 5, 6]);
+// console.log(sum);
