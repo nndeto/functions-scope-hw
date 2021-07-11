@@ -6,3 +6,20 @@
 //upon the variable.
 //Q3 Being able to return a value makes a function more versatile in its uses.
 
+//Palindrome
+//lowercase my string - for case sensitivity
+//turn it into an array
+//reverse it
+//join it into a string
+//check if new string matches original
+///////using equality here will give true or false
+
+function checkPalindrome(str) {
+    let commonString = str.toLowerCase();
+    let arrayString = commonString.split("");
+    let reverseString = arrayString.reverse();
+    let returnString = reverseString.join("");
+    return commonString === returnString;  
+}
+const wordIsPalindrome = checkPalindrome("level");
+console.log(wordIsPalindrome)
