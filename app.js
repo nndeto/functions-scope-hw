@@ -14,20 +14,21 @@
 //check if new string matches original
 ///////using equality here will give true or false
 
-// function checkPalindrome(str) {
-//     let commonString = str.toLowerCase();
-//     let arrayString = commonString.split("");
-//     let reverseString = arrayString.reverse();
-//     let returnString = reverseString.join("");
-//     return commonString === returnString;  
-// }
-// const wordIsPalindrome = checkPalindrome("level");
-// console.log(wordIsPalindrome);
+function checkPalindrome(str) {
+    let commonString = str.toLowerCase();
+    let arrayString = commonString.split("");
+    let reverseString = arrayString.reverse();
+    let returnString = reverseString.join("");
+    return commonString === returnString;  
+}
+const wordIsPalindrome = checkPalindrome("level");
+console.log(wordIsPalindrome);
 
 ////Check a List
 //for loop to iterate through the array
 //if/else statements to check for student and log messages
 //outside block scopoe final return if all the loops fail to find student
+
 function checkForStudent(studentName, arrayOfStudents) {
     for ( let i = 0; i < arrayOfStudents.length; i++)
         if (arrayOfStudents[i] === studentName) {
@@ -36,25 +37,22 @@ function checkForStudent(studentName, arrayOfStudents) {
     console.log(`${studentName}, was not one of the listed students.`);    
     return false;
 }
-const studentIncluded =  checkForStudent('Sally', ['Kyle', 'Ruby']);
+const studentIncluded =  checkForStudent('Sally', ['Kyle', 'Ruby', 'Sally']);
 console.log(studentIncluded);
-
-
-
-
-
 
 ////Sum Array
 //declare a total as 0 so it can change
 //write a for loop
 //add i to total for each iteration
 //return total
-// function sumArray(anArray) {
-//     let total = 0;
-//     for (let i = 0; i < anArray.length; i++) {
-//             total+=anArray[i];
-//     }
-//     return total;
-// }
-// const sum = sumArray([1, 2, 3, 4, 5, 6]);
-// console.log(sum);
+function sumArray(anArray) {
+    let total = 0;
+    for (let i = 0; i < anArray.length; i++) {
+            total+=anArray[i];
+    }
+    return total;
+}
+const sum = sumArray([1, 2, 3, 4, 5, 6]);
+console.log(sum);
+
+
