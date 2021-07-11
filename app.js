@@ -55,4 +55,18 @@ function sumArray(anArray) {
 const sum = sumArray([1, 2, 3, 4, 5, 6]);
 console.log(sum);
 
+///////////Hungry For More
+///Pythagoras
+//a^2 + b ^2 = c ^2
+function calculateSide(sideA, sideB) {
+    sideA = Math.pow(sideA, 2);
+    sideB =  Math.pow(sideB, 2);
+    let theorem = Math.sqrt(sideA + sideB);
+    return theorem;
+}
+const sideC = calculateSide(8, 6)
+console.log(sideC);
+
+
+
 
